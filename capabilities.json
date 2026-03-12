@@ -1,0 +1,276 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Fields",
+            "displayNameKey": "role_fields",
+            "name": "fields",
+            "kind": "Grouping",
+            "preferredTypes": [
+                { "text": true },
+                { "numeric": true },
+                { "integer": true }
+            ]
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "select": [
+                        { "for": { "in": "fields" } }
+                    ],
+                    "dataReductionAlgorithm": {
+                        "top": { "count": 10000 }
+                    }
+                }
+            }
+        }
+    ],
+    "objects": {
+        "configGeral": {
+            "displayName": "General",
+            "displayNameKey": "group_configGeral",
+            "properties": {
+                "bgBar": {
+                    "displayName": "Bar Background",
+                    "displayNameKey": "prop_bgBar",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "corAccent": {
+                    "displayName": "Accent Color",
+                    "displayNameKey": "prop_corAccent",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "fontFamily": {
+                    "displayName": "Font Family",
+                    "displayNameKey": "prop_fontFamily",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Segoe UI", "value": "Segoe UI" },
+                            { "displayName": "Inter", "value": "Inter" },
+                            { "displayName": "Arial", "value": "Arial" },
+                            { "displayName": "Roboto", "value": "Roboto" }
+                        ]
+                    }
+                },
+                "borderRadius": {
+                    "displayName": "Border Radius",
+                    "displayNameKey": "prop_borderRadius",
+                    "type": { "integer": true }
+                },
+                "showShadow": {
+                    "displayName": "Show Shadow",
+                    "displayNameKey": "prop_showShadow",
+                    "type": { "bool": true }
+                },
+                "showSort": {
+                    "displayName": "Show Sort",
+                    "displayNameKey": "prop_showSort",
+                    "type": { "bool": true }
+                },
+                "showSearch": {
+                    "displayName": "Show Search",
+                    "displayNameKey": "prop_showSearch",
+                    "type": { "bool": true }
+                },
+                "showChips": {
+                    "displayName": "Show Chips",
+                    "displayNameKey": "prop_showChips",
+                    "type": { "bool": true }
+                },
+                "showResetBtn": {
+                    "displayName": "Show Reset Button",
+                    "displayNameKey": "prop_showResetBtn",
+                    "type": { "bool": true }
+                },
+                "alinhamento": {
+                    "displayName": "Alignment",
+                    "displayNameKey": "prop_alinhamento",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Left", "displayNameKey": "enum_left", "value": "left" },
+                            { "displayName": "Center", "displayNameKey": "enum_center", "value": "center" },
+                            { "displayName": "Right", "displayNameKey": "enum_right", "value": "right" }
+                        ]
+                    }
+                },
+                "idioma": {
+                    "displayName": "Language",
+                    "displayNameKey": "prop_idioma",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Portugues (BR)", "value": "pt-BR" },
+                            { "displayName": "English", "value": "en" }
+                        ]
+                    }
+                },
+                "numFiltrosPrincipais": {
+                    "displayName": "Main Filters Count",
+                    "displayNameKey": "prop_numFiltrosPrincipais",
+                    "type": { "integer": true }
+                },
+                "sortMode": {
+                    "displayName": "Default Sort",
+                    "displayNameKey": "prop_sortMode",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Original", "displayNameKey": "enum_sortOrig", "value": "orig" },
+                            { "displayName": "A - Z", "displayNameKey": "enum_sortAZ", "value": "az" },
+                            { "displayName": "Z - A", "displayNameKey": "enum_sortZA", "value": "za" },
+                            { "displayName": "Count", "displayNameKey": "enum_sortCount", "value": "count" }
+                        ]
+                    }
+                }
+            }
+        },
+        "configTexto": {
+            "displayName": "Text",
+            "displayNameKey": "group_configTexto",
+            "properties": {
+                "corTexto": {
+                    "displayName": "Text Color",
+                    "displayNameKey": "prop_corTexto",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "corTextoSec": {
+                    "displayName": "Secondary Text Color",
+                    "displayNameKey": "prop_corTextoSec",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "tamanhoFonte": {
+                    "displayName": "Font Size",
+                    "displayNameKey": "prop_tamanhoFonte",
+                    "type": { "integer": true }
+                },
+                "pesoFonte": {
+                    "displayName": "Font Weight",
+                    "displayNameKey": "prop_pesoFonte",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Normal (400)", "value": "400" },
+                            { "displayName": "Medium (500)", "value": "500" },
+                            { "displayName": "Semibold (600)", "value": "600" },
+                            { "displayName": "Bold (700)", "value": "700" }
+                        ]
+                    }
+                },
+                "tamanhoTitulo": {
+                    "displayName": "Title Size",
+                    "displayNameKey": "prop_tamanhoTitulo",
+                    "type": { "integer": true }
+                }
+            }
+        },
+        "configCheckbox": {
+            "displayName": "Checkbox",
+            "displayNameKey": "group_configCheckbox",
+            "properties": {
+                "corCheckAtivo": {
+                    "displayName": "Active Checkbox Color",
+                    "displayNameKey": "prop_corCheckAtivo",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "corHover": {
+                    "displayName": "Hover Color",
+                    "displayNameKey": "prop_corHover",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "showSelectAll": {
+                    "displayName": "Show Select All",
+                    "displayNameKey": "prop_showSelectAll",
+                    "type": { "bool": true }
+                },
+                "borderRadiusCheck": {
+                    "displayName": "Checkbox Border Radius",
+                    "displayNameKey": "prop_borderRadiusCheck",
+                    "type": { "integer": true }
+                }
+            }
+        },
+        "configBotoes": {
+            "displayName": "Buttons",
+            "displayNameKey": "group_configBotoes",
+            "properties": {
+                "corBordaBtn": {
+                    "displayName": "Button Border Color",
+                    "displayNameKey": "prop_corBordaBtn",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "borderRadiusBotao": {
+                    "displayName": "Button Border Radius",
+                    "displayNameKey": "prop_borderRadiusBotao",
+                    "type": { "integer": true }
+                },
+                "showBordaAtiva": {
+                    "displayName": "Show Active Border",
+                    "displayNameKey": "prop_showBordaAtiva",
+                    "type": { "bool": true }
+                },
+                "modoIndicador": {
+                    "displayName": "Indicator Mode",
+                    "displayNameKey": "prop_modoIndicador",
+                    "type": {
+                        "enumeration": [
+                            { "displayName": "Number", "displayNameKey": "enum_numero", "value": "numero" },
+                            { "displayName": "Dot", "displayNameKey": "enum_ponto", "value": "ponto" },
+                            { "displayName": "None", "displayNameKey": "enum_nenhum", "value": "nenhum" }
+                        ]
+                    }
+                }
+            }
+        },
+        "configBorda": {
+            "displayName": "Border",
+            "displayNameKey": "group_configBorda",
+            "properties": {
+                "showBorda": {
+                    "displayName": "Show Border",
+                    "displayNameKey": "prop_showBorda",
+                    "type": { "bool": true }
+                },
+                "corBorda": {
+                    "displayName": "Border Color",
+                    "displayNameKey": "prop_corBorda",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "larguraBorda": {
+                    "displayName": "Border Width",
+                    "displayNameKey": "prop_larguraBorda",
+                    "type": { "integer": true }
+                }
+            }
+        },
+        "configDarkMode": {
+            "displayName": "Dark Mode",
+            "displayNameKey": "group_configDarkMode",
+            "properties": {
+                "darkMode": {
+                    "displayName": "Enable Dark Mode",
+                    "displayNameKey": "prop_darkMode",
+                    "type": { "bool": true }
+                },
+                "bgDark": {
+                    "displayName": "Dark Background",
+                    "displayNameKey": "prop_bgDark",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "corBordaDark": {
+                    "displayName": "Dark Border",
+                    "displayNameKey": "prop_corBordaDark",
+                    "type": { "fill": { "solid": { "color": true } } }
+                }
+            }
+        },
+        "general": {
+            "displayName": "General",
+            "properties": {
+                "filter": {
+                    "type": { "filter": true }
+                }
+            }
+        }
+    },
+    "supportsHighlight": true,
+    "supportsSynchronizingFilterState": true,
+    "privileges": []
+}

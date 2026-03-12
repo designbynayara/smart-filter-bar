@@ -1,0 +1,29 @@
+{
+    "visual": {
+        "name": "smartFilterBarSDK",
+        "displayName": "Smart Filter Bar",
+        "guid": "smartFilterBarSDKA9F7BD62E04ADCE9DD7450D052A5DB60",
+        "visualClassName": "Visual",
+        "version": "1.0.0.0",
+        "description": "Barra horizontal de filtros com dropdowns, badges, sort, dark mode e cross-filtering.",
+        "supportUrl": "https://instagram.com/designby_nayara",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "Nayara Hellen",
+        "email": "nayara@designby.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [
+        "stringResources/pt-BR/resources.resjson",
+        "stringResources/en-US/resources.resjson"
+    ],
+    "version": "1.0.0.0"
+}
